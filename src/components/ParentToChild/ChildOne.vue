@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h6>Child One</h6>
+  <div class="child">
+    <p>Child One</p>
     <p>{{ propsOne }}</p>
   </div>
 </template>

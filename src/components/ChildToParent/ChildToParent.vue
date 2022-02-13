@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h3 class="pt-5">Child To Parent</h3>
+    <h1>Child To Parent</h1>
     <Parent></Parent>
   </div>
 </template>

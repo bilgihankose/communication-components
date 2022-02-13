@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <p>Verilerim {{ todos }}</p>
-    <p>Verilerim {{ string }}</p>
-    <p>Verilerim {{ object }}</p>
-    <ChildOne></ChildOne>
-    <ChildTwo :yolla="todos" :kelime="string" :gonder="object"></ChildTwo>
+  <div class="parent">
+    <h2>Parent Container</h2>
+    <p>{{ emitOne }}</p>
+    <p>{{ emitTwo }}</p>
+    <ChildOne @childOne="emitOne = $event"></ChildOne>
+    <ChildTwo @childTwo="emitTwo = $event"></ChildTwo>
   </div>
 </template>
 
@@ -19,9 +19,8 @@ export default {
   },
   data() {
     return {
-      todos: [1, 2, 3, 4],
-      object: {"greeting" : "hello from adele"},
-      string: "Hi",
+      emitOne: "Child One's Data",
+      emitTwo: "Child Two's Data",
     };
   },
 };

@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
-    <h6>You can send data to child.</h6>
+  <div class="parent">
+    <h2>Parent Container</h2>
+    <p>You can send data to child.</p>
     <p>Message One is:</p>
     <input type="text" v-model="messageOne" />
     <p>Message Two is:</p>

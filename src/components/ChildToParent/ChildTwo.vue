@@ -1,22 +1,21 @@
 <template>
-  <div>
-  <h5>ChildTwo</h5>
-  <p>{{ yolla }}</p>
-    <p>{{ kelime }}</p>
-    <p>{{ gonder }}</p>
-  <button @click="clickMe">Click Me Change Message</button>
+  <div class="child">
+    <h5>Child Two</h5>
+    <input type="text" v-model="message" @keyup="clickMe" />
   </div>
 </template>
 
 <script>
 export default {
   name: "ChildTwo",
-  props: ["yolla", "kelime", "gonder"],
+  data() {
+    return {
+      message: "",
+    };
+  },
   methods: {
     clickMe() {
-      this.yolla = [1, 3, 5];
-      this.kelime = "naber";
-      this.gonder = {"gulben": "selam yalnizlik ben geldim"}
+      this.$emit("childTwo", this.message);
     },
   },
 };
