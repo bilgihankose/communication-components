@@ -1,13 +1,13 @@
 <template>
   <div>
     <h6>Child Two</h6>
-    <p>{{ messageTwo }}</p>
+    <p>{{ propsTwo }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "ChildTwo",
-  props: ["messageTwo"],
+  props: ["propsTwo"],
 };
 </script>

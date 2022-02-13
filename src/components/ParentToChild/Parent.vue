@@ -5,8 +5,8 @@
     <input type="text" v-model="messageOne" />
     <p>Message Two is:</p>
     <input type="text" v-model="messageTwo" />
-    <ChildOne :messageOne="messageOne"></ChildOne>
-    <ChildTwo :messageTwo="messageTwo"></ChildTwo>
+    <ChildOne :propsOne="messageOne"></ChildOne>
+    <ChildTwo :propsTwo="messageTwo"></ChildTwo>
   </div>
 </template>
 
